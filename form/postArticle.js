@@ -10,7 +10,7 @@ const articleDataForm = {
     price:parseFloat($('#price').val()),
     content:$('#content').val(),
     stock:parseInt($('#stock').val()),
-    online:$('#online').val().is(':checked'),
+    online:$('#online').is(':checked'),
     picture:[{
         img:$('#img').val(),
     }],
