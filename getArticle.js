@@ -8,12 +8,12 @@ $.ajax({
         response.forEach(element => {
             articleElements+= 
             `
-            <a href ="detail/detailsArticle.html">
-            <p>
-            Nom :${element.name}
-            prix:${element.price}
-            </p>
-            <img src='${element.picture[0].img} 'width='200px'>
+            <div class="article-item">
+                <a href="detail/detailsArticle.html">
+                    <p>Nom : ${element.name}<br>Prix : ${element.price}</p>
+                    <img src="${element.picture[0].img}" width="200px" alt="Article Image">
+                </a>
+            </div>
             `
 
             
