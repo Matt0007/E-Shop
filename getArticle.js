@@ -1,4 +1,5 @@
 console.log('sss')
+$(document).ready( () => {
 $.ajax({
     url:'http://localhost:8000/api/article/get',
     type:'GET',
@@ -9,7 +10,7 @@ $.ajax({
             articleElements+= 
             `
             <div class="article-item">
-                <a href="detail/detailsArticle.html">
+                <a href="detail/detailArticle.html?id=${element._id}">
                     <p>Nom : ${element.name}<br>Prix : ${element.price}</p>
                     <img src="${element.picture[0].img}" width="200px" alt="Article Image">
                 </a>
@@ -26,4 +27,5 @@ $.ajax({
     error: (xhr,status,error) =>{
         console.error(`Erreur Ajax${error}`);
     }
+})
 })
