@@ -7,9 +7,9 @@ const articleDataForm = {
     name:$('#name').val(),
     category:$('#categorie').val(),
     brand:$('#brand').val(),
-    price:$('#price').val(),
+    price:$parsInt('#price').val(),
     content:$('#content').val(),
-    stock:$('#stock').val(),
+    stock:$parsInt('#stock').val(),
     online:$('#online').val(),
     picture:[{
         img:$('#img').val(),
