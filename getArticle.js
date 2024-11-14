@@ -6,7 +6,10 @@ $.ajax({
         let articleElements = '';
         let monArticle =$('#article');
         response.forEach(element => {
-            articleElements+= `<p>
+            articleElements+= 
+            `
+            <a href ="detail/detailsArticle.html">
+            <p>
             Nom :${element.name}
             prix:${element.price}
             </p>
