@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../form/formulaire.html">Add Article</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- fin navigation -->
+     <h1>Mise a jour de l'article</h1>
+
+        <form id="postForm">
+            <label for="name">Nom de l'article</label>
+            <input type="text" id="name"> <br>
+    
+            <label for="category">Categorie de l'article</label>
+            <input type="text" id="category"> <br>
+            
+            <label for="brand">Marque</label>
+            <input type="text" id="brand"> <br>
+    
+            <label for="price">Prix</label>
+            <input type="number" id="price" step="0.01"> <br>
+    
+            <label for="content">Content</label>
+            <textarea id="content"></textarea> <br>
+    
+            <label for="stock">Stock</label>
+            <input type="number" id="stock"> <br>
+    
+            <label for="online">En ligne</label>
+            <input type="checkbox" id="online"> <br>
+    
+            <label for="img">URL de l'image</label>
+            <input type="url" id="img"> <br>
+    
+
+    
+            
+        </form>
+    
+
+     
+
+     <button id="updateArticle"> Mettre a jour cet article</button>
+    
+    <script src="putArticle.js"> </script>
+</body>
+</html>

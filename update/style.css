@@ -1,0 +1,144 @@
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 0 0.5rem;
+}
+
+/* Navigation */
+header {
+    background-color: #1f1f1f;
+    padding: 0.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3em 0.8em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+    transform: scale(1.1);
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    margin: 1em 0;
+    font-size: 2em;
+    color: #ffa500;
+}
+
+/* Formulaire */
+#postForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin: 1.5em auto;
+    max-width: 600px;
+    padding: 1.5em;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#postForm label {
+    align-self: flex-start;
+    color: #ffa500;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+#postForm input[type="text"],
+#postForm input[type="number"],
+#postForm input[type="url"],
+#postForm textarea {
+    width: 100%;
+    padding: 0.6em;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    font-size: 1em;
+    margin-bottom: 0.8em;
+}
+
+#postForm input[type="checkbox"] {
+    margin-right: 0.3em;
+}
+
+#postForm input:focus,
+#postForm textarea:focus {
+    border-color: #ffa500;
+    outline: none;
+    box-shadow: 0px 0px 6px rgba(255, 165, 0, 0.5);
+}
+
+/* Bouton de mise à jour */
+#updateArticle {
+    display: block;
+    margin: 1em auto;
+    padding: 0.6em 1.2em;
+    background-color: #2e7d32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+}
+
+#updateArticle:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+/* Image */
+#img-preview {
+    margin-top: 1em;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(255, 87, 34, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+#img-preview:hover {
+    box-shadow: 0px 8px 16px rgba(255, 87, 34, 0.4);
+    transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    #postForm {
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}

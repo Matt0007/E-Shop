@@ -109,13 +109,7 @@ form textarea::placeholder {
 }
 
 /* Effet de secousse sur les champs de formulaire au focus */
-@keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-3px); }
-    50% { transform: translateX(3px); }
-    75% { transform: translateX(-3px); }
-    100% { transform: translateX(0); }
-}
+
 
 form input[type="text"]:focus,
 form input[type="number"]:focus,
