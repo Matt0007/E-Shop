@@ -15,7 +15,7 @@ const articleDataForm = {
         img:$('#img').val(),
     }],
 }
-console.log (articleDataFor)
+console.log (articleDataForm)
 
 
 
